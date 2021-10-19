@@ -42,4 +42,15 @@ def main():
     switch["password"] = "qwerty"
     print( switch.keys() )
     print( switch.values() )
+
+    print( "Ninth test - popitem")
+    switch.popitem()
+    print( switch.keys() )
+    print( switch.values() )
+
+    print( "Tenth test - Another popitem")
+    switch.popitem()
+    print( switch.keys() )
+    print( switch.values() )
+
 main()
