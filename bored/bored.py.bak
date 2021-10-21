@@ -1,0 +1,72 @@
+#! /usr/bin/env python3
+""" Python Training | Author: Dave Watts """
+
+# import always goes to top of code
+import requests
+
+API = " http://www.boredapi.com/api/activity/"
+
+def main():
+
+    # Create resp, which is our request object
+    # randon activity
+    resp = requests.get(f"{API}")
+    print ("Random Activity")
+    print ( resp.json() )
+    print ()
+
+    typeofactivity = "education"
+    resp = requests.get(f"{API}?type={typeofactivity}")
+    print (f"{typeofactivity} Activity")
+    print ( resp.json() )
+    print ()
+
+    typeofactivity = "recreational"
+    resp = requests.get(f"{API}?type={typeofactivity}")
+    print (f"{typeofactivity} Activity")
+    print ( resp.json() )
+    print ()
+
+    typeofactivity = "social"
+    resp = requests.get(f"{API}?type={typeofactivity}")
+    print (f"{typeofactivity} Activity")
+    print ( resp.json() )
+    print ()
+
+    typeofactivity = "diy"
+    resp = requests.get(f"{API}?type={typeofactivity}")
+    print (f"{typeofactivity} Activity")
+    print ( resp.json() )
+    print ()
+
+    typeofactivity = "charity"
+    resp = requests.get(f"{API}?type={typeofactivity}")
+    print (f"{typeofactivity} Activity")
+    print ( resp.json() )
+    print ()
+
+    typeofactivity = "cooking"
+    resp = requests.get(f"{API}?type={typeofactivity}")
+    print (f"{typeofactivity} Activity")
+    print ( resp.json() )
+    print ()
+
+    typeofactivity = "relaxation"
+    resp = requests.get(f"{API}?type={typeofactivity}")
+    print (f"{typeofactivity} Activity")
+    print ( resp.json() )
+    print ()
+
+    typeofactivity = "music"
+    resp = requests.get(f"{API}?type={typeofactivity}")
+    print (f"{typeofactivity} Activity")
+    print ( resp.json() )
+    print ()
+
+    typeofactivity = "busywork"
+    resp = requests.get(f"{API}?type={typeofactivity}")
+    print (f"{typeofactivity} Activity")
+    print ( resp.json() )
+    print ()
+
+main()
