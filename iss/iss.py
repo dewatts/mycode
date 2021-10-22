@@ -16,6 +16,9 @@ def main():
     resp = requests.get(API)
 
     # display the methods available to our new object
+    print("resp")
+    print( resp.json())
+    print("keys")
     print( resp.json().keys())
 
 
@@ -23,14 +26,10 @@ def main():
     longitude=position.get('longitude')
     latitude=position.get('latitude')
 
-#    longitude=["longitude"]
-    
     print("Current LOCATION OF THE ISS:")
     print (longitude)
     print (latitude)
 
-    #print(f"Lon: {resp.json(['longitude'])}")
-    #print(f"Lat: {resp.json(['latitude'])}")
 
 if __name__ == "__main__":
     main()
