@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+#ssh to each server from list
+# execute command on each server
+# install paramiko , pyyaml, pyexcel
+
